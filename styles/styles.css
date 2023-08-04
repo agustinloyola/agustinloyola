@@ -11,114 +11,26 @@
 
 
     .navbar-brand{ font-family: Georgia, 'Times New Roman', Times, serif;}
-   
+
+.row{
+    margin-top: 10px;
+}
+
+.card{ 
+    box-shadow: 0px 2px 5px black;
+}
+.card:hover{ 
+    transform: translateY(-15px);
     
-
-    .conteiner{
-        display: flex;
-        flex-direction: row;
-       
-        justify-content: center;
-        align-items:center;
-        flex-wrap: wrap;
-        
-    }
-    .conte_parent{
-      display:flex;
-      flex-direction: row;
-    
-      justify-content:center;
-      align-items:center;
-      flex-wrap:wrap;
-      
-    }
-    .conte{
-        height: 510px;
-        width: 350px;
-        box-shadow:0 0 7px #111 ;
-        margin: 30px 30px;
-        
-        
-    }
-    .conte .card{
-        height: 200px;
-        width: 100%;
-        margin-bottom: 170px;
-    }
-    .card img{
-        margin: auto;
-        
-    }
-    .conte .invictus img{
-        height: 330px;
-        width: 300px;
-    }
-
-    .conte .chanel img{height: 330px;
-        width: 300px; }
-
-    .conte .chanel{background-color: #6A0C0B;}
+}
+.container{
+    display: flex inline
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
 
 
-    .conte .invictus{
-         background-color: #111;
-    }
-
-    .conte .goodgirl img{
-        height: 330px;
-        width: 300px;
-    }
-    .conte .goodgirl{
-        background-color: #111;
-    }
-
-    .conte .vip img{
-        height: 330px;
-        width: 300px;
-    }
-    .conte .vip{
-        background-color:#111;
-    }
-        
-
-
-    .conte .onemillion img{
-        height: 330px;
-        width: 300px;
-    }
-    .conte .onemillion{ 
-        background-color: #6A0C0B;
-    }
-    .conte .boss{
-        background-color: #6A0C0B;
-    }
-    .conte .badboy{
-        background-color:#B11313;
-    }
-    .conte .boss img{
-        height: 330px;
-        width: 230px;
-    }
-    .conte .badboy img{
-        height: 330px;
-        width: 300px;
-    }
-    .informacion{
-        height: 80px;
-        width: 100%;
-    }
-    .informacion h1{
-        font-family: sans-serif;
-        font-size: 1.2em;
-        text-align: center;
-        color: #333;
-        margin-bottom: -10px;
-    }
-    .informacion p{
-        text-align: center;
-        font-family: sans-serif;
-        font-size: .9em;
-        color: #555;} 
 
         .contacto{
             font-family:Arial, Helvetica, sans-serif;
@@ -175,7 +87,8 @@
             background-color: green;
         
         }
-        @media(max-width:911px) {
+        @media(max-width:911px min-width:144px) { 
+           
             .contacto{ padding: 30px;
 
             }
@@ -224,5 +137,20 @@
           .insta-nosotros{
             text-decoration: none;
             color: white;
+          } 
+          .photo{
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+            box-shadow: 0px 0px 30px; 
+
+          }
+          .galeria{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 32px;
+            padding: 5px;
+            margin: auto;
+          
           }
             
