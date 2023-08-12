@@ -1,0 +1,17 @@
+@mixin colores ($fondo){
+    background: #0d2033
+}
+
+.contacto{
+    @include colores(#0d2033)
+}
+.nosotros{
+    @include colores(#0d2033)
+}
+.body{
+    @include colores(#0d2033)
+}
+.espacios{
+    @include colores(#0d2033)
+}
+    
